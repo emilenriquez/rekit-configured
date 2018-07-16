@@ -15,6 +15,7 @@
   "rules": {
     "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
     "react/forbid-prop-types": [1, { "forbid": ["any"]}],
+    "import/prefer-default-export": 0,
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],

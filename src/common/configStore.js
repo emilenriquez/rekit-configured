@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring, global-require, no-param-reassign */
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { routerMiddleware } from 'react-router-redux';

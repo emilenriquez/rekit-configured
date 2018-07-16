@@ -7,6 +7,10 @@ export default class Layout extends Component {
     children: PropTypes.node
   };
 
+  static defaultProps = {
+    children: ''
+  };
+
   render() {
     return (
       <div className="examples-layout">
