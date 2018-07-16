@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:lodash-fp/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "lodash-fp"],
+  "rules": {
+    "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
+    "react/forbid-prop-types": [1, { "forbid": ["any"]}],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "jsx-a11y/anchor-is-valid":[
+        "error",
+        {
+            "components":["Link"],
+            "specialLink":["to","onClick"],
+            "aspects":["noHref","invalidHref","preferButton"]
+        }
+    ],
+    "react/jsx-filename-extension": [
+        1,
+        {
+            "extensions": [
+                ".js"
+            ]
+        }
+    ],
+    "react/prop-types": [
+        "error",
+        {
+            "ignore": [
+                "className"
+            ]
+        }
+    ],
+    "prettier/prettier": [
+        "error",
+        {
+            "singleQuote": true
+        }
+    ]
+  },
+  "overrides": [
+    {
+        "files": ["**/test.js", "**/*.test.js", "tests/**"],
+        "rules": {
+        "func-names": "off"
+        }
+    }
+  ]
+}
