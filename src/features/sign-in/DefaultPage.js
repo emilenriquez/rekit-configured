@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 // import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import { LoginPage as TablerLoginPage } from 'tabler-react';
-import 'tabler-react/dist/Tabler.css';
 import * as actions from './redux/actions';
 
 // import { LoginPage as TablerLoginPage } from 'tabler-react';

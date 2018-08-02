@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import reactLogo from '../../images/react-logo.svg';
-import rekitLogo from '../../images/rekit-logo.svg';
 import * as actions from './redux/actions';
 
 export class DefaultPage extends Component {
+  static propTypes = {
+    // admin: PropTypes.object.isRequired,
+    // actions: PropTypes.object.isRequired
+  };
+
   render() {
     return (
-      <div className="login-default-page">
-        <header className="app-header">
-          <img src={reactLogo} className="app-logo" alt="logo" />
-          <img src={rekitLogo} className="rekit-logo" alt="logo" />
-          <h1 className="app-title">Risk Management</h1>
-          <Link to="admin"> Go to </Link>
-        </header>
+      <div className="admin-default-page">
+        <h1> ADMIN PAGE </h1>
       </div>
     );
   }
@@ -24,7 +22,7 @@ export class DefaultPage extends Component {
 /* istanbul ignore next */
 function mapStateToProps(state) {
   return {
-    home: state.home
+    admin: state.admin
   };
 }
 

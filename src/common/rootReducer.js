@@ -5,6 +5,7 @@ import commonReducer from '../features/common/redux/reducer';
 import examplesReducer from '../features/examples/redux/reducer';
 import signInReducer from '../features/sign-in/redux/reducer';
 import dashboardReducer from '../features/dashboard/redux/reducer';
+import adminReducer from '../features/admin/redux/reducer';
 
 // NOTE 1: DO NOT CHANGE the 'reducerMap' name and the declaration pattern.
 // This is used for Rekit cmds to register new features, remove features, etc.
@@ -17,7 +18,8 @@ const reducerMap = {
   common: commonReducer,
   examples: examplesReducer,
   signIn: signInReducer,
-  dashboard: dashboardReducer
+  dashboard: dashboardReducer,
+  admin: adminReducer
 };
 
 export default combineReducers(reducerMap);
